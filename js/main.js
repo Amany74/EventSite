@@ -27,6 +27,10 @@ $("#top").click(function(){
     $("body, html").animate({scrollTop:"0"},500)
 })
 
+// clode
+$(".close-icon").click(function(){
+    $("#menu").animate({left:`-${$(".menu-content").innerWidth()}`},500);
+});
 
 // toogle open 
 let openBoxOff = $("#menu").offset().left;
